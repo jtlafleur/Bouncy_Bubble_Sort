@@ -9,7 +9,7 @@ function bouncyBubbleSort(arr){
     for(var i = 0; i < arr.length-1; i++){      //Initial loop for length of array
         swapped = false;                        //No swap on first pass
         if(i % 2 === 0){                        //We iterate forward for first bubble sort
-            for(var j = start; j < stop-1; j++){
+            for(var j = start; j < stop; j++){
                 if(arr[j] > arr[j+1]){          //Sorting method
                     temp = arr[j];              //Moves number indices based on value
                     arr[j] = arr[j+1];
@@ -36,7 +36,7 @@ function bouncyBubbleSort(arr){
     return arr;                                     //Returns our array sorted
 };
 
-var test_arr = [64, 34, 25, 12, 22, 11, 90];        //Test array
+var test_arr = [452, 3];        //Test array
 console.log("Unsorted Array:",test_arr);            //Shows unsorted array
 var sorted_arr = bouncyBubbleSort(test_arr);        //Calls bouncy bubble sort function
 console.log("Bouncy Bubble Sorted array:",sorted_arr);      //Displays the sorted array
