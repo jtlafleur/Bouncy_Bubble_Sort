@@ -36,7 +36,7 @@ function bouncyBubbleSort(arr){
     return arr;                                     //Returns our array sorted
 };
 
-var test_arr = [452, 3];        //Test array
+var test_arr = [452, 3, 25, 98, 32, 1];        //Test array
 console.log("Unsorted Array:",test_arr);            //Shows unsorted array
 var sorted_arr = bouncyBubbleSort(test_arr);        //Calls bouncy bubble sort function
 console.log("Bouncy Bubble Sorted array:",sorted_arr);      //Displays the sorted array
